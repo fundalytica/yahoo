@@ -11,7 +11,6 @@ def run():
     argparser.add_argument("--save", action='store_true', help="save data")
 
     args = argparser.parse_args()
-
     symbol = args.symbol
 
     yahoo = Yahoo()
