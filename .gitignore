@@ -1,4 +1,4 @@
-yahoo-historical/*.csv
+yahoo-historical/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
