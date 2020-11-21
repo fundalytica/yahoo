@@ -29,7 +29,7 @@ def run():
     data["date"] = nyc_datetime.strftime(date_fmt)
     data["time"] = nyc_datetime.strftime(time_fmt)
     data["symbol"] = args.symbol
-    data["price"] = ask if isUSMarketOpen else previousClose
+    data["price"] = ask
     data["change"] = round((ask / previousClose) - 1, 5)
     data["market"] = "open" if isUSMarketOpen else "closed"
     print(data)
