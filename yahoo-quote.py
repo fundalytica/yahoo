@@ -32,6 +32,6 @@ def run():
     data["price"] = ask
     data["change"] = round((ask / previousClose) - 1, 5)
     data["market"] = "open" if isUSMarketOpen else "closed"
-    print(data)
+    print(json.dumps(data))
 
 run()
